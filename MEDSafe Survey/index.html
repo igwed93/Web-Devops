@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div>
+    <h1 id="title">MEDSafe Survey Form</h1>
+    <p id="description">Hey there! Kindly take this survey and help us serve you better</p>
+    <p><img src="https://st4.depositphotos.com/13193658/26514/i/600/depositphotos_265141950-stock-photo-handsome-cheerful-man-holding-container.jpg" alt="A logo"></p>
+    <form id="survey-form"method="post">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" required/></label>
+        <label id="email-label">Email <input id="email" type="email" required/></label>
+        <label id="number-label">Age <span>(recommended)</span></span> <input id="number" type="number" min="13" max="120"/></label>
+        <label id="gender-label">Gender
+            <select id="gender" name="gender" required>
+                <option value="">(select one)</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </label>
+      </fieldset>
+      <fieldset>
+         <p class="section">Which option best describes your current role?</p>
+        <label>
+          <select id="dropdown" required>
+            <option value="">select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Patient</option>
+            <option value="3">Medical guide</option>
+            <option value="4">Physician</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="section">Would you recommend MEDSafe to a friend?</p>
+        <label for="recommend">
+          <input type="radio" name="recommend" id="recommend"/> Definitely
+        </label>
+        <label for="recommend">
+          <input type="radio" name="recommend" id="recommend"/> Maybe
+        </label>
+        <label for="recommend">
+          <input type="radio" name="recommend" id="recommend"/> Not sure
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="section">What is your favorite feature of MEDSafe?</p>
+        <label for="dropdown">
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Diagnosis tool</option>
+            <option value="2">Medical management</option>
+            <option value="3">Drug safety</option>
+            <option value="4">Virtual appointment</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="section">What Services would you like to see improved? <span>(Check all that apply)</span></p>
+        <label for="virtual-visitation"><input type="checkbox" id="virtual-visitation" value="one"/> Weekly Virtual visitations</label>
+        <label for="drug-management"><input type="checkbox" id="drug-management" value="two"/> Drug Management</label>
+        <label for="therapy-enrollment"><input type="checkbox" id="therapy-enrollment" value="three"/> Therapy enrollment</label>
+        <label for="reaction-report"><input type="checkbox" id="reaction-report" value="four"/> Drug reaction report</label>
+        <label for="emergency-response"><input type="checkbox" id="emergency-response" value="five"/> Emergency response</label>
+        <label for="visitation"><input type="checkbox" id="visitation" value="six"/> Physical visit scheduling</label>
+        <label for="customer-care"><input type="checkbox" id="customer-care" value="seven"/> Customer care</label>
+        <label for="diet-management"><input type="checkbox" id="diet-management" value="eight"/> Diet management</label>
+        <label>Any comments or suggestions?
+            <textarea id="additional-comments" name="additional-comments" rows="7" cols="10" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit"/>
+    </form>
+    </div>
+  </body>
+</html>
