@@ -1,2 +1,2 @@
-# Learning-HTML
-Repository for my html practice
+# Web-Devops
+Tracking my progress in websites and web applications development
