@@ -12,9 +12,9 @@
     <p><img src="https://st4.depositphotos.com/13193658/26514/i/600/depositphotos_265141950-stock-photo-handsome-cheerful-man-holding-container.jpg" alt="A logo"></p>
     <form id="survey-form"method="post">
       <fieldset>
-        <label id="name-label">Name <input id="name" type="text" required/></label>
-        <label id="email-label">Email <input id="email" type="email" required/></label>
-        <label id="number-label">Age <span>(recommended)</span></span> <input id="number" type="number" min="13" max="120"/></label>
+        <label id="name-label">Name <input id="name" type="text" required placeholder="first name         middle name         last name"/></label>
+        <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your email address"/></label>
+        <label id="number-label">Age <span>(recommended)</span><input id="number" type="number" min="13" max="120" placeholder="Enter your age.."/></label>
         <label id="gender-label">Gender
             <select id="gender" name="gender" required>
                 <option value="">(select one)</option>
@@ -39,13 +39,13 @@
       <fieldset>
         <p class="section">Would you recommend MEDSafe to a friend?</p>
         <label for="recommend">
-          <input type="radio" name="recommend" id="recommend"/> Definitely
+          <input type="radio" name="recommend" id="recommend" value="definitely"/> Definitely
         </label>
         <label for="recommend">
-          <input type="radio" name="recommend" id="recommend"/> Maybe
+          <input type="radio" name="recommend" id="recommend" value="maybe"/> Maybe
         </label>
         <label for="recommend">
-          <input type="radio" name="recommend" id="recommend"/> Not sure
+          <input type="radio" name="recommend" id="recommend" value="not-sure"/> Not sure
         </label>
       </fieldset>
       <fieldset>
@@ -74,7 +74,7 @@
             <textarea id="additional-comments" name="additional-comments" rows="7" cols="10" placeholder="Enter your comment here..."></textarea>
         </label>
       </fieldset>
-      <input type="submit" value="Submit"/>
+      <input type="submit" value="Submit" id="submit"/>
     </form>
     </div>
   </body>

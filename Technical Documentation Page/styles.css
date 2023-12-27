@@ -1,0 +1,101 @@
+body {
+    min-height: 100vh;
+    background-color:rgb(247, 246, 243);
+    color: rgb(48, 47, 47);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.scrollbox::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+    background: rgb(247, 246, 243);
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+    background: rgb(48, 47, 47);
+    border-radius: 10px;
+}
+
+header, header h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.scrollbox {
+    overflow: auto;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 250px;
+    height: 100%;
+    background: rgb(247, 246, 243);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(48, 47, 47);
+}
+
+.scrollbox-content div {
+    padding: 15px 0 15px 0;
+}
+
+
+#navbar header {
+    border-bottom: 1px solid rgb(48, 47, 47);
+    padding: 15px 15px 15px 0;
+    text-align: left;
+}
+
+
+
+pre {
+    background-color: grey;
+    color: black;
+    text-align: left;
+    padding-top: 10px;
+    justify-content: left;
+}
+
+.scrollbox-content > div a {
+    color:rgb(48, 47, 47);
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto;
+}
+
+
+main {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+section {
+    padding: 5px 0 5px 0;
+}
+
+@media (min-width: 786px) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 10;
+        width: 250px;
+        height: 100%;
+        background: rgb(247, 246, 243);
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid rgb(48, 47, 47);
+    }
+}

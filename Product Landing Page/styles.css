@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A244D;
+    color: goldenrod;
+    border: none;
+    margin: -1px 0 -1px 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 298px 1fr;
+    padding-top: 160px;
+}
+
+
+nav {
+    text-transform: uppercase;
+    background: rgb(255, 208, 89);
+    border-right: 1px solid #1A244D;
+    grid-column: 3 / 4;
+    height: 40%;
+    position: relative;
+    top: 97px;
+}
+
+nav > ul {
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 2px 5px 0;
+}
+
+nav ul > li {
+    display: inline-block;
+    width: auto;
+}
+
+nav ul > li a {
+    color: #1A244D;
+    text-align: center;
+    padding: 0 16px 0 16px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 1fr 30%;
+    max-width: 100%;
+    grid-column: 1 / 3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #1A244D;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    background: linear-gradient(90deg, #1A244D, #676a77, #1A244D);
+    grid-column: 2 / 3;
+}
+
+.logo {
+    width: 60%;
+    height: auto;
+    grid-column: 1 / 2;
+}
+
+.catalog-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+}
+
+.catalog-header {
+    width: 298px;
+}
+
+.business-background {
+    background: linear-gradient(90deg,goldenrod, #676a77);
+    color: #1A244D;
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    grid-column: 2 / 3;
+}
+
+.image img {
+    width: 298px;
+    height: auto;
+}
+
+
+form {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    margin: auto;
+}
+
+label, textarea, select {
+    display: block;
+}
+
+input {
+    width: 75%;
+    display: block;
+    background-color: #1A244D;
+    color: goldenrod;
+}
+
+input[type="submit"] {
+    width: 20%;
+    justify-content: left;
+    margin-left: 13px;
+    background: #1A244D;
+    color: goldenrod;
+    border-radius: 20%;
+    border: 1px solid linear-gradient(#1A244D, goldenrod);
+}
+
+input[type="radio"] {
+    width: unset;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0.5em 0.3em 0;
+    accent-color: #1A244D;
+    border-color: goldenrod;
+    border-width: 1px;
+}
+
+
+select, textarea {
+    background-color: #1A244D;
+    color: goldenrod;
+}
+
+::placeholder {
+    color: goldenrod;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+video {
+    width: 500px;
+    height: 400px;
+    padding: 10px 10px 20px 30px;
+}
+
+.footer {
+    width: 50%;
+    display: flex;
+    padding: 20px;
+    justify-content: right;
+}
+
+.footer div {
+    margin: 10px;
+}
+
+footer div > div a {
+    color: goldenrod;
+}
+
+
+footer {
+    background: repeating-linear-gradient(90deg, goldenrod, #1A244D);
+    display: flex;
+}
+
+
+.wrapper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #1A244D;
+}
+
+.button {
+    width: 15%;
+    padding: 5px;
+    align-content: center;
+}
+
+button > a {
+    text-decoration: none;
+}
+
+.icon {
+    padding-left: 20px;
+}
+
+.icon > a > i {
+    color: #1A244D;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: auto;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        position: relative;
+        top: 18px;
+        width: 100px;
+        height: 70px;
+    }
+
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+        text-align: left;
+    }
+    
+    nav > ul > li {
+        font-size: 11px;
+        display: block;
+        padding-bottom: 1.5px;
+    }
+
+    .business-background {
+        padding: 10px 10px 0 10px;
+        width: auto;
+    }
+
+    .page-layout {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        padding-top: 70px;
+    }
+    .catalog-container {
+        width: 100%;
+    }
+
+    .catalog-header {
+        width: 100%;
+    }
+
+    .image img {
+    width: 100px;
+    height: auto;
+    }
+
+    video {
+        width: auto;
+        height: 200px;
+    }
+    body {
+        font-size: 15px;
+    }
+
+    form {
+        width: auto;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Global Aquaqueen Engineering Services</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <img src="images/Logo5.svg"  class="logo" id="header-img" alt="The Business Logo"/>
+            <h1 class="bussiness-name">Global Aquaqueen Engineering Services</h1>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#about" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#enquiry" class="nav-link">Enquiry</a></li>
+                    <li><a href="#bookings" class="nav-link">Bookings</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="page-layout">
+            <div class="catalog-container">
+                <div class="catalog-header">
+                    <p>Engr. <strong>Paul A. Nwankwo</strong> (<em>CEO</em> GAES)</p>
+                    <h2>Exhibits of Our Work</h2>
+                </div>
+                <div class="image"><img src="images/swimming-pool-1.jpg" alt="sample-pic1"/></div>
+                <div class="image"><img src="images/swimming-pool-2.jpg" alt="sample-pic2"/></div>
+                <div class="image"><img src="images/civil-construction-works-1.jpg" alt="sample-pic3"/></div>
+                <div class="image"><img src="images/civil-construction-works-2.jpg" alt="sample-pic4"/></div>
+                <div class="image"><img src="images/electrical-works-1.jpg" alt="sample-pic5"/></div>
+                <div class="image"><img src="images/electrical-works-2.jpg" alt="sample-pic6"/></div>
+                <div class="image"><img src="images/plumbing-works-1.jpg" alt="sample-pic7"/></div>
+                <div class="image"><img src="images/civil-construction-works-3.jpg" alt="sample-pic8"/></div>
+            </div>
+            <div class="business-background">
+                <div class="About" id="about">
+                    <h2 class="about">About us</h2>
+                    <p>We are a top tier engineering firm that helps you meet all your engineering needs and desires. From mechanical work to electrical
+                        maintenace services, we dare to affirm our standard of being the you will find in the market.</p>
+                    <p>Our assertions can be verified on our landing page, where you find awards and endorsements of credible work we have undertaken and adequately 
+                        delivered quality services.
+                    </p>
+                    <h2 class="business-services">Our Services</h2>
+                    <p>You can find below a comprehensive list of the services we provide to present and prospective clients:</p>
+                    <p>
+                        <ul class="services">
+                            <li>Electrical & Mechanical Engineering services.</li>
+                            <li>Construction and maintenance of swimming pools of all shapes and sizes.</li>
+                            <li>Construction and maintenance of Fountain pools and Treatment plants</li>
+                            <li>Construction of Boreholes, Water treatment services, and other Structural & civil works</li>
+                        </ul>
+                    </p>
+                    <video controls id="video">
+                        <source src="videos/Sample_video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="enquiry" id="enquiry">
+                    <h2>Have an Inquiry?</h2>
+                    <p>Fill the form below, and we will be in touch in less than 48 hours.</p>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                        <fieldset>
+                            <label for="client-name">
+                                Client's Name:<input type="text" id="client-name" placeholder="Surname           First name" required/>
+                            </label>
+                            <label for="client-type">
+                                Client type:<select id="client-type" name="client">
+                                    <option value="">Select one</option>
+                                    <option value="individual">Individual</option>
+                                    <option value="corporation">Corporation</option>
+                                    <option value="organization">Organization</option>
+                                    <option value="small-scale-business">Small-scale Business</option>
+                                    <option value="medium-scale-business">Medium-scale Business</option>
+                                    <option value="large-scale-business">Large-scale Business</option>
+                                    <option value="NGO">Non-govermental Organization</option>
+                                </select>
+                            </label>
+                            <label for="email">
+                                Email:<input id="email" type="email"  name="email" required placeholder="Enter your email address"/>
+                            </label>
+                            <label for="purpose">
+                                What is your purpose?<select id="purpose" name="purpose" required>
+                                    <option value="">Select one</option>
+                                    <option value="enquiry">All forms of Enquiry</option>
+                                    <option value="booking">Bookings</option>
+                                    <option value="appointment">Schedule an appointment with the CEO</option>
+                                    <option value="report">Report an issue</option>
+                                    <option value="confirmation">Confirm payments</option>
+                                    <option value="application">Apply for a role</option>
+                                </select>
+                            </label>
+                            <label for="address">
+                                Address: <input id="address" type="text" required placeholder="Please enter your address"/>
+                            </label>
+                        </fieldset>
+                        <fieldset id="bookings">
+                            <p>What service would you like to request?</p>
+                            <label for="bookings"><input type="radio" id="bookings" name="bookings" value="electrical-services"/>Electrical Services</label>
+                            <label for="bookings"><input type="radio" id="bookings" name="bookings" value="mechanical-services"/>Mechanical Services</label>
+                            <label for="bookings"><input type="radio" id="bookings" name="bookings" value="civil-work"/>Civil Work</label>
+                            <label for="bookings"><input type="radio" id="bookings" name="bookings" value="swimming-pool"/>Swimming Pool Services</label>
+                            <label for="bookings">Others<input type="text"  id="bookings" name="bookings" placeholder="Describe here"/></label> 
+                            <label for="additional-info">
+                                Additional Information: <textarea id="additonal-info" name="additonal-info" rows="7" cols="48" placeholder="you can write here..."></textarea>
+                            </label>
+                        </fieldset>
+                        <input type="submit" id="submit" name="submit" value="SUBMIT"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div class="button">
+                    <div class="icon">
+                      <a href="https://www.facebook.com/globalaquaquen/"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <span>Facebook</span>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                      <a href="https://www.twitter.com/globalaquaquen/"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <span>Twitter</span>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                      <a href="https://www.instagram.com/globalaquaquen/"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <span>Instagram</span>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                      <a href="https://www.youtube.com/globalaquaquen/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <span>Youtube</span>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                      <a href="https://www.linkedin.com/globalaquaquen/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <span>LinkedIn</span>
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href="#about">Privacy</a></div>
+                <div><a href="#about">Terms</a></div>
+                <div><a href="mailto:globalaquaquen.org">Contact</a></div>
+                <div><a href="#about">Home</a></div>
+            </div>
+        </footer>
+    </body>
+</html>
