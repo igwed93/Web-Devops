@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F6FC;
+    color: #5C2FDE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Set height to viewport height */
+}
+
+.side-photo {
+    width: 40%;
+    text-align: center;
+    padding: 20px; /* Add padding to create space around the content */
+    overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+.header {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+figcaption {
+    font-size: .75em;
+    font-weight: 700;
+}
+
+.body-content {
+    width: 60%;
+    background-color: #5C2FDE;
+    color: #FFFFFF;
+    padding: 20px; /* Add padding to create space around the content */
+    overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+.birthday-wishes {
+    height: 100px;
+    margin-bottom: 20px; /* Add margin between birthday wishes */
+}

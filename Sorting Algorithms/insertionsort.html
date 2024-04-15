@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insertion Sort Visualization</title>
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+<canvas id="canvas" width="600" height="300"></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+const insertionSort = async (array) => {
+  for (let i = 1; i < array.length; i++) {
+    const currValue = array[i];
+    let j = i - 1;
+
+    while (j >= 0 && array[j] > currValue) {
+      array[j + 1] = array[j];
+      j--;
+      await drawArray(array, i, j); // Draw array after each step
+    }
+    array[j + 1] = currValue;
+    await drawArray(array, i, j); // Draw array after each step
+  }
+}
+
+// Function to draw array elements on canvas
+const drawArray = (array, currentIndex, comparedIndex) => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const barWidth = canvas.width / array.length;
+
+  array.forEach((value, index) => {
+    ctx.fillStyle = index === currentIndex ? 'red' : (index === comparedIndex ? 'blue' : 'black');
+    ctx.fillRect(index * barWidth, canvas.height - value * 10, barWidth, value * 10);
+  });
+  
+  // Add a small delay for visualization
+  return new Promise(resolve => setTimeout(resolve, 100));
+}
+
+// Initialize and visualize the array
+const array = [5, 3, 1, 4, 2];
+drawArray(array);
+
+// Start the insertion sort algorithm
+insertionSort(array);
+</script>
+</body>
+</html>
