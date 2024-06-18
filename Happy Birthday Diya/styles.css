@@ -13,11 +13,12 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    height: auto; /* Set height to viewport height */
+    height: 100%; /* Set height to viewport height */
 }
 
 .side-photo {
     width: 40%;
+    height: 100vh;
     text-align: center;
     padding: 20px; /* Add padding to create space around the content */
     overflow-y: auto; /* Enable vertical scrollbar */
@@ -28,7 +29,7 @@ body {
     font-weight: 700;
 }
 
-#side-photo {
+#main-photo {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -41,6 +42,7 @@ figcaption {
 
 .body-content {
     width: 60%;
+    height: 100vh;
     background-color: #5C2FDE;
     color: #FFFFFF;
     padding: 20px; /* Add padding to create space around the content */
@@ -120,16 +122,17 @@ figcaption {
     .container {
         flex-direction: column;
         overflow-y: auto;
+        height: 100%;
     }
 
     .side-photo {
         display: block;
         width: 100%;
-        height: auto;
+        height: 100%;
         overflow-y: hidden;
     }
 
-    #side-photo {
+    #main-photo {
         max-width: 70%;
         height: auto;
     }
@@ -138,7 +141,7 @@ figcaption {
     .body-content {
         width: 100%;
         overflow-y: hidden;
-        height: auto;
+        height: 100%;
     }
 
     .content-photo {

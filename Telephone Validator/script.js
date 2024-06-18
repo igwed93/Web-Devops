@@ -9,11 +9,16 @@ const result = document.getElementById('results-div');
 // matches all numbers with or without the country code "1", with or without parentheses
 // around the area code, with or without hyphens, and with or without spaces between digits. 
 
-const numFormat = /(?:^|\s)(?:(?:1\s?)?(?=\(\d{3}\)|\d{3})[\s|-]?\d{3}[\s|-]?\d{4})(?:\s|$)/;
 
+const formatA = /^(?:(?:1)\s?(\(\d{3}\))\s?\d{3}-\d{4}$)/; // matches 1 (555) 555-5555, 1(555)555-5555
+const formatB = /^(?:(?:1)\s\d{3}(\s|-)\d{3}(\s|-)\d{4}$)/; // matches 1 555 555 5555, 1 555-555-5555
+const formatE = /^1?(\(\d{3}\)|\d{3})[-\s]?\d{3}[-\s]?\d{4}$/;
+
+
+const formats = [formatA, formatB, formatE];
 
 // tests the user input with the regeular expression
-const isTelNumber = (telNum) => numFormat.test(telNum);
+const isTelNumber = (telNum) => formats.some((regex) => regex.test(telNum));
 
 
 // validates the number provided by the user
