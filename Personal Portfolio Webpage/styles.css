@@ -157,6 +157,11 @@ projects and a link to view them*/
     padding-bottom: 20px;
 }
 
+.projects > .project-tile > figcaption {
+    display: inline-block;
+}
+
+
 .projects > .project-tile > figcaption > a {
     padding: 10px;
     font-size: 18px;
