@@ -9,6 +9,13 @@
     <body>
         <h1>Welcome to Quiz App</h1>
         <p>Test your knowledge with our quiz below!</p>
+
+        <!-- Category Selection -->
+        <label for="categorySelect">Select a Category:</label>
+        <select id="categorySelect" onchange="initializeQuiz()">
+            <option value="" disabled selected>Select Category</option>
+            <!-- Categories will be dynamically loaded here by JavaScript -->
+        </select>
         <button id="startQuiz">Start Quiz</button>
 
         <div id="questionContainer"></div>

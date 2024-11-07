@@ -42,6 +42,10 @@ button:hover {
     background-color: #45a049;
 }
 
+* {
+    margin: 0 10px 0 10px;
+}
+
 #progressContainer {
     width: 100%;
     background-color: #ddd;
@@ -55,4 +59,14 @@ button:hover {
     background-color: #4CAF50;
     border-radius: 5px;
     transition: width 0.3s ease;
+    margin: 0 auto;
 }
+
+
+select {
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 2px solid #45a049;
+}
+
